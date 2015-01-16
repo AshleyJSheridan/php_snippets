@@ -5,16 +5,17 @@ php_snippets
 This is a simple repo to hold a collection of small stand-alone PHP scripts for a variety of purposes.
 
 # Contents
-(alphabetically)<br/>
+(alphabetically)
+
 1. [head_request_filesize.php](#head_request_filesize)
-2. [persistent_style_switcher.php](#persistent_style_switcher)
-3. [pretty_cli.php](#pretty_cli)
-4. [profanity_filter.php](#profanity_filter)
-5. [remove_ms_crap.php](#remove_ms_crap)
-6. [reverse_regexp_query_laravel.php](#reverse_regexp_query_laravel)
-7. [roman_to_numeral_conversion.php](#roman_to_numeral_conversion)
-8. [smart_image_resizing.php](#smart_image_resizing)
-9. [uk_postcode_regex.php](#uk_postcode_regex)
+1. [persistent_style_switcher.php](#persistent_style_switcher)
+1. [pretty_cli.php](#pretty_cli)
+1. [profanity_filter.php](#profanity_filter)
+1. [remove_ms_crap.php](#remove_ms_crap)
+1. [reverse_regexp_query_laravel.php](#reverse_regexp_query_laravel)
+1. [roman_to_numeral_conversion.php](#roman_to_numeral_conversion)
+1. [smart_image_resizing.php](#smart_image_resizing)
+1. [uk_postcode_regex.php](#uk_postcode_regex)
 
 ## <a name="head_request_filesize"></a>Head Request Filesize
 Fetches just the header of a remote file and outputs the filesize. In practical terms, and value in the HTTP response headers could be read, the filesize is a useful example.
