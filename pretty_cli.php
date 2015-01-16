@@ -4,12 +4,31 @@ $pcli->set_box_width(60);
 $pcli->set_box_type('double');
 
 $pcli->msg(
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales eros sit amet tellus fringilla, sed euismod lectus tincidunt. Nunc velit erat, gravida finibus metus sed, viverra pretium lorem. Sed eu consequat nisi. Duis id velit in sem dapibus tempor sed vel orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam nec nunc nec ante imperdiet eleifend eu in elit. Praesent vel imperdiet dui. Duis condimentum leo id malesuada commodo. Cras volutpat, justo ac cursus vestibulum, nulla urna molestie dolor, vel luctus erat felis rutrum massa. Aliquam non erat ut felis malesuada fringilla. Vivamus dictum dignissim ligula eget dapibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque faucibus feugiat varius. ',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales eros sit amet tellus fringilla, sed euismod lectus tincidunt. Nunc velit erat, gravida finibus metus sed, viverra pretium lorem. Sed eu consequat nisi. Duis id velit in sem dapibus tempor sed vel orci. ',
 	'',
 	true,
 	true,
 	'purple',
 	'teal'
+);
+$pcli->set_box_width(40);
+$pcli->set_box_type('thick');
+$pcli->msg('a fairly short warning message that wraps to a couple of lines',
+	'error',
+	true,
+	true
+);
+$pcli->msg('a quick notice message, not boxed',
+	'warning',
+	true
+);
+$pcli->set_box_width(70);
+$pcli->set_box_type('classic');
+$pcli->msg(
+	'Classic border style success message. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales eros sit amet tellus fringilla, sed euismod lectus tincidunt. Nunc velit erat, gravida finibus metus sed, viverra pretium lorem. Sed eu consequat nisi. Duis id velit in sem dapibus tempor sed vel orci. ',
+	'success',
+	true,
+	true
 );
 
 class pretty_cli
@@ -260,6 +279,9 @@ class pretty_cli
 			else
 				$lines[] = $words[$i];
 		}
+		
+		if(count($lines))
+			$lines[0] = trim($lines[0]);
 		
 		return $lines;
 	}
