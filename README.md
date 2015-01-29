@@ -7,6 +7,7 @@ This is a simple repo to hold a collection of small stand-alone PHP scripts for 
 # Contents
 (alphabetically)
 
+1. [arduino_php_sockets](#arduino_php_sockets)
 1. [head_request_filesize.php](#head_request_filesize)
 1. [persistent_style_switcher.php](#persistent_style_switcher)
 1. [pretty_cli.php](#pretty_cli)
@@ -16,6 +17,11 @@ This is a simple repo to hold a collection of small stand-alone PHP scripts for 
 1. [roman_to_numeral_conversion.php](#roman_to_numeral_conversion)
 1. [smart_image_resizing.php](#smart_image_resizing)
 1. [uk_postcode_regex.php](#uk_postcode_regex)
+
+## <a name="arduino_php_sockets"></a>Arduino PHP Sockets
+This is a simple demo I set up to demonstrate how to communicate between PHP and an Arduino over a USB connection. The PHP script just spits out a letter 'a' once every second continually over the specified port the Arduino is connected to, and the Arduino reads in whatever is in the serial buffer and stores it to an internal string which it builds up.
+
+As the example consists of two scripts in two different languages I put them both into their own directory [arduino_php_sockets](arduino_php_sockets)
 
 ## <a name="head_request_filesize"></a>Head Request Filesize
 Fetches just the header of a remote file and outputs the filesize. In practical terms, and value in the HTTP response headers could be read, the filesize is a useful example.
